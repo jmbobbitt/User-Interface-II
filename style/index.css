@@ -17,7 +17,7 @@ html {
 }
 /* ----------Global ---------- */
 
-/* ----------Navbar ----------*/
+/* ----------Header ----------*/
 header {
 
     width: 100%;
@@ -31,7 +31,7 @@ header {
     background: lightgrey;
 }
 .navbar * {
-    display: inline-flex; 
+    display: flex; 
     font-size: 1rem;
 
 }
@@ -43,9 +43,9 @@ header {
     margin-right: 2rem;
     font-family: serif;
 }
-/* -----x----Navbar -----x---- */
+/* -----x----Header-----x---- */
 
-/* ---------- Body ---------- */
+/* ---------- Main ---------- */
 body{
     width: 80%;
     margin: 4rem auto;
@@ -53,8 +53,10 @@ body{
     font-family: 'Playfair Display', serif;;
     justify-content: space-around;
 }
+/* ---------- Introduction---------- */
 .forest-path img {
-    height: 18rem;
+    height: 12rem;
+    width: 12rem;
 }
 .text {
     margin-top: 2rem;
@@ -76,20 +78,19 @@ body{
 }
 
 .projects button {
+
     width: 100%;
     display: flex;
     align-items: center;
-}
-
-.projects button {
-
+    text-align: center;
+    justify-content: center;
     color: white;
     border-radius: 0.9rem;
     padding: 0.625rem;
     width: 9.3rem;
     height: 3.75rem;
     text-transform: capitalize;
-    border: none;
+    border: 3px black solid;
     background-color:  #00CCBE; 
     margin: 2rem auto;
 
@@ -100,4 +101,8 @@ body{
     cursor: pointer;
 }
 
-/* -----x----Home -----x---- * 
+/* -----x----Photos-----x---- */ 
+.photos img {
+    height: 12rem;
+    width: 12rem;
+}
