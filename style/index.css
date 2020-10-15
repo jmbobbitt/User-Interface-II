@@ -18,18 +18,21 @@ html {
 /* ----------Global ---------- */
 
 /* ----------Header ----------*/
-header {
 
-    width: 100%;
-    margin: 0 auto;
-    padding-top: 1rem;
-    height: 3rem;
-    position: fixed;
-    align-self: flex-start;
-    top: 0;
-    right: 0rem;
-    background: lightgrey;
+.siteHeader 
+{
+    display:flex;
+    justify-content: space-between;
+    padding: 10px;
+    background-color: lightslategray;
 }
+
+.siteHeader_section-left 
+{
+    display: flex;
+    align-items: center;
+}
+
 .navbar * {
     display: flex; 
     font-size: 1rem;
@@ -39,7 +42,7 @@ header {
 .navbar button {
     text-decoration: none;
     background-color: green;
-    color: #05668D;
+    color: white;
     margin-right: 2rem;
     font-family: serif;
 }
@@ -52,6 +55,7 @@ body{
     display: flex;
     font-family: 'Playfair Display', serif;;
     justify-content: space-around;
+    flex-direction: column;
 }
 /* ---------- Introduction---------- */
 .forest-path img {
@@ -102,13 +106,15 @@ body{
 }
 
 /* -----x----Photos-----x---- */ 
-section.photos {
+.photos {
         vertical-align: top;
-        display: inline-block;
+        display: flex;
         flex-direction: row;
         flex-wrap: wrap;
+        align-items: stretch;
         text-align: center;
-        width: 120px;
+        width: 100%;
+        margin: 20px;
 }
 
 .photos img {
@@ -116,8 +122,22 @@ section.photos {
     width: 12rem;
     }
 
+.photo {
+    display: flex;
+    flex-direction: column;
+    margin: 25px;
+}
+
 .caption {
     display: block;
     text-align: center;
     color: red;
+}
+
+/* ----x----footer----x------ */
+
+footer h3 {
+    text-align: center;
+    align-items: center;
+    justify-content: center;
 }
