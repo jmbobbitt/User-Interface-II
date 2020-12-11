@@ -24,17 +24,22 @@ html {
 {
     display:flex;
     justify-content: center;    
-    padding: 10px;
+    padding: 0%;
+    margin: auto;
     background-color: lightslategray;
+}
+.siteHeader__item{
+    text-align: center;
 }
 
 .siteHeader_section-left 
 {
     display: flex;
     align-items: center;
+    justify-content: center;
 }
 
-.navbar-button * {
+.siteHeader__section_right {
     display: flex; 
     font-size: 1rem;
     text-align: center;
@@ -45,9 +50,10 @@ html {
 .navbar-button {
     width: 100%;
     display: flex;
+    text-align: center;
     align-items: center;
+    justify-content: center;
     color: white;
-    background-color: lightslategray;
     border-radius: 0.9rem;
     padding: 0.625rem;
     width: 9.3rem;
@@ -99,39 +105,46 @@ body{
 }
 
 
-.projects button:hover {
+.navbar-button:hover {
     filter: brightness(120%);
     cursor: pointer;
 }
 
 
 /* -----x----Photos-----x---- */ 
+/* width of whole container needs adjusting */
 .photos {
         vertical-align: top;
         display: flex;
+        justify-items: space-between;
         flex-direction: row;
-        flex-wrap: wrap;
-        align-items: stretch;
+        flex-wrap: nowrap;
+        align-items: flex-start;
         text-align: start;
-        width: 100%;
-        margin: auto;
+        width: auto;
+        padding: 0%;
+        /* margin: auto; */
 }
 
 .photos img {
-    height: 15rem;
-    width: 15rem;
+    height: auto;
+    width: 80%;
     }
 
 .photo {
-    display: flex;
-    flex-direction: column;
-    margin: 25px;
+    margin: auto;
+    padding: 2rem;
+    height: auto;
+    padding-left: 0%;
+    padding-right: 0%;
 }
 
 .caption {
-    display: block;
-    text-align: center;
+    display: flex;
+    justify-content: right;
+    text-align: start;
     color: red;
+    width: 25%;
 }
 
 /* ----x----footer----x------ */
@@ -141,3 +154,38 @@ footer h3 {
     align-items: center;
     justify-content: center;
 }
+/* Style all font awesome icons */
+.fa {
+    padding: 20px;
+    font-size: 30px;
+    width: 30px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 50%;
+  }
+  
+  /* Add a hover effect if you want */
+  .fa:hover {
+    opacity: 0.7;
+  }
+  
+  /* Set a specific color for each brand */
+  
+  /* Facebook */
+  .fa-facebook {
+    background: #3B5998;
+    color: white;
+  }
+  
+  /* Twitter */
+  .fa-twitter {
+    background: #55ACEE;
+    color: white;
+  }
+
+  .fa-linkedin {
+    background: #007bb5;
+    color: white;
+  }
+
+  .
