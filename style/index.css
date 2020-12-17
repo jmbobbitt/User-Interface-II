@@ -12,6 +12,7 @@ h2 {
 }
 body {
     font-family: sans-serif;
+    background-color: lightgray;
 }
 html {
     scroll-behavior: smooth;
@@ -26,7 +27,7 @@ html {
     justify-content: center;    
     padding: 0%;
     margin: auto;
-    background-color: lightslategray;
+    
 }
 .siteHeader__item{
     text-align: center;
@@ -114,6 +115,7 @@ body{
 /* -----x----Photos-----x---- */ 
 /* width of whole container needs adjusting */
 .photos {
+        border: 1px solid black;
         vertical-align: top;
         display: flex;
         justify-items: space-between;
@@ -123,15 +125,17 @@ body{
         text-align: start;
         width: auto;
         padding: 0%;
-        /* margin: auto; */
+        margin: auto;
 }
 
 .photos img {
+    border: 1px solid black;
     height: auto;
     width: 80%;
     }
 
 .photo {
+    
     margin: auto;
     padding: 2rem;
     height: auto;
@@ -151,6 +155,10 @@ body{
 
 footer {
     text-align: center;
+    background-color: darkgray; 
+    padding: 10%;
+    height: auto;
+    width: 80%;
 }
 
 footer h3 {
@@ -159,13 +167,36 @@ footer h3 {
     justify-content: center;
 }
 
-.contact {
-    display: inline;
+.social-button {
+    width: 100%;
+    display: flex;
+    text-align: center;
+    align-items: center;
     justify-content: center;
+    color: white;
+    border-radius: 0.9rem;
+    padding: 0.625rem;
+    width: 9.3rem;
+    height: 3.75rem;
+    text-transform: capitalize;
+    border: 3px black solid;
+    background-color:  #00CCBE; 
+    margin: 1rem auto;
+}
+
+.contact-button:hover {
+    filter: brightness(120%);
+    cursor: pointer;
 }
 
 /* Style all font awesome icons */
-.fa {
+.accounts {
+    justify-content: center;
+}
+
+
+.fab {
+    border: 1px solid lightgray;
     padding: 20px;
     font-size: 30px;
     width: 30px;
@@ -175,12 +206,18 @@ footer h3 {
   }
   
   /* Add a hover effect if you want */
-  .fa:hover {
+  .fab:hover {
     opacity: 0.7;
   }
   
   /* Set a specific color for each brand */
-  
+
+  /* GitHub */
+  .fa-github{
+        color:white;
+        background-color: #6ebce0; 
+  }
+
   /* Facebook */
   .fa-facebook {
     background: #3B5998;
@@ -196,4 +233,16 @@ footer h3 {
   .fa-linkedin {
     background: #007bb5;
     color: white;
+  }
+
+  /* **MEDIA QUERRIES CSS** */
+
+  /* TABLET SIZE */
+  @media all and ( max-width : 800px){
+
+
+  }
+
+  @media all and (max-width: 500px) {
+
   }
