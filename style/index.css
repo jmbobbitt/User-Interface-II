@@ -141,19 +141,29 @@ body{
 
 .caption {
     display: flex;
-    justify-content: right;
+    justify-content: center;
     text-align: start;
     color: red;
-    width: 25%;
+    width: 28%;
 }
 
 /* ----x----footer----x------ */
+
+footer {
+    text-align: center;
+}
 
 footer h3 {
     text-align: center;
     align-items: center;
     justify-content: center;
 }
+
+.contact {
+    display: inline;
+    justify-content: center;
+}
+
 /* Style all font awesome icons */
 .fa {
     padding: 20px;
@@ -187,5 +197,3 @@ footer h3 {
     background: #007bb5;
     color: white;
   }
-
-  .
