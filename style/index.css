@@ -12,6 +12,7 @@ h2 {
 }
 body {
     font-family: sans-serif;
+    background-color: lightgray;
 }
 html {
     scroll-behavior: smooth;
@@ -24,17 +25,22 @@ html {
 {
     display:flex;
     justify-content: center;    
-    padding: 10px;
-    background-color: lightslategray;
+    padding: 0%;
+    margin: auto;
+    
+}
+.siteHeader__item{
+    text-align: center;
 }
 
 .siteHeader_section-left 
 {
     display: flex;
     align-items: center;
+    justify-content: center;
 }
 
-.navbar-button * {
+.siteHeader__section_right {
     display: flex; 
     font-size: 1rem;
     text-align: center;
@@ -45,9 +51,10 @@ html {
 .navbar-button {
     width: 100%;
     display: flex;
+    text-align: center;
     align-items: center;
+    justify-content: center;
     color: white;
-    background-color: lightslategray;
     border-radius: 0.9rem;
     padding: 0.625rem;
     width: 9.3rem;
@@ -64,7 +71,7 @@ body{
     width: 80%;
     margin: 4rem auto;
     display: flex;
-    font-family: 'Playfair Display', serif;;
+    font-family: 'Playfair Display', serif;
     justify-content: space-around;
     flex-direction: column;
 }
@@ -99,45 +106,233 @@ body{
 }
 
 
-.projects button:hover {
+.navbar-button:hover {
     filter: brightness(120%);
     cursor: pointer;
 }
 
 
 /* -----x----Photos-----x---- */ 
+/* width of whole container needs adjusting */
 .photos {
+        
         vertical-align: top;
         display: flex;
+        justify-items: space-between;
         flex-direction: row;
-        flex-wrap: wrap;
-        align-items: stretch;
+        flex-wrap: nowrap;
         text-align: start;
         width: 100%;
+        padding: 0%;
         margin: auto;
 }
 
 .photos img {
-    height: 15rem;
-    width: 15rem;
+    border: 1px solid black;
+    height: auto;
+    width: 100%;
+    align-items: flex-start;
     }
 
 .photo {
-    display: flex;
-    flex-direction: column;
-    margin: 25px;
+    
+    margin: auto;
+    padding: 5%;
+    height: auto;
+    padding-left: 1%;
+    padding-right: 1%;
 }
 
 .caption {
-    display: block;
+    display: inline-flex;
+    justify-content: center;
+    align-items: stretch;
     text-align: center;
     color: red;
+    width: 50%;
 }
 
 /* ----x----footer----x------ */
+
+footer {
+    text-align: center;
+    background-color: darkgray; 
+    padding: 10%;
+    height: auto;
+    width: 80%;
+}
 
 footer h3 {
     text-align: center;
     align-items: center;
     justify-content: center;
 }
+
+.social-button {
+    width: 100%;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    border-radius: 0.9rem;
+    padding: 0.625rem;
+    width: 9.3rem;
+    height: 3.75rem;
+    text-transform: capitalize;
+    border: 3px black solid;
+    background-color:  #00CCBE; 
+    margin: 1rem auto;
+}
+
+.contact-button:hover {
+    filter: brightness(120%);
+    cursor: pointer;
+}
+
+/* Style all font awesome icons */
+.accounts {
+    justify-content: center;
+}
+
+
+.fab {
+    border: 1px solid lightgray;
+    padding: 20px;
+    font-size: 30px;
+    width: 30px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 50%;
+  }
+  
+  /* Add a hover effect if you want */
+  .fab:hover {
+    opacity: 0.7;
+  }
+  
+  /* Set a specific color for each brand */
+
+  /* GitHub */
+  .fa-github{
+        color:white;
+        background-color: #6ebce0; 
+  }
+
+  /* Facebook */
+  .fa-facebook {
+    background: #3B5998;
+    color: white;
+  }
+  
+  /* Twitter */
+  .fa-twitter {
+    background: #55ACEE;
+    color: white;
+  }
+
+  .fa-linkedin {
+    background: #007bb5;
+    color: white;
+  }
+
+  /* **MEDIA QUERRIES CSS** */
+
+  /* TABLET SIZE */
+  @media all and ( max-width : 800px){
+/* ---- Global ----*/   
+body{
+    width: 90%;
+    margin:  auto;
+    padding-right: 10%;
+    display: flex;
+    justify-content: center;
+}
+/* ---- Header ----*/
+nav {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    flex-direction: column wrap;
+    align-items: center;
+  }
+
+  div.siteHeader_section-right
+        {
+          display: flex;
+          flex-direction: column;
+          flex-wrap: wrap;
+        }   
+    .navbar-button {
+        padding:5px;
+        margin: 1px;
+        width: 70px;
+    }
+
+/* -- Introduction -- */
+.mountain img {
+    height: 50%;
+    width: 90%;
+    justify-content: center;
+    margin: auto;
+    padding: 5%;
+}
+
+/* ---- Photos ---- */
+.photos {
+    /* border: 1px solid black; */
+    justify-items: space-between;
+    flex-wrap: wrap;
+    text-align: start;
+    width: auto;
+    padding: 0%;
+    margin: auto;
+}
+
+.photo img{
+    border: 1px solid black;
+    height: 75%;
+    width: 75%;
+    }
+
+/* .caption p{
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: red;
+    width: 100%;
+} */ 
+
+/* ---- Footer ----*/
+
+/* --- Style Icons */
+
+  }
+
+  @media all and (max-width: 500px) {
+
+/* ---- Header ----*/
+
+nav .siteHeader_section-right 
+{
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+}
+
+/*icon is used to open and close topnav on small screens <i class="fa fa-bars"></i> */
+
+
+/* ---- Main ---- */
+
+/* -- Introduction -- */
+
+/* ---- Photos ---- */
+
+/* ---- Footer ----*/
+
+/* --- Style Icons */
+
+
+  }
